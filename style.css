@@ -1,0 +1,726 @@
+html,body{
+    margin:0px;
+    padding: 0px;
+    width:100%;
+    height: 100vh;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+.topWrapper{
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: calc(100% - 20px);
+    align-items: center;
+    margin-left: 20px;
+    z-index: 2;
+}
+.logo{
+    flex-grow: 1;
+    text-align: left;
+    margin-left:20px;
+    color:#ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.logo::after{
+    content:' ';
+    color:#ffd900;
+    width: 10px;
+    height: 10px;
+    background-color: #ffd900;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 10px;
+ 
+}
+.filterMenu{
+    flex-grow: 2;
+}
+.filterMenu ul {
+    list-style: none;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    
+    padding-left: 0px;
+}
+.filterMenu ul li {
+    color:#ffffff;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding-bottom: 0.4rem;
+ 
+}
+.filterMenu ul li:nth-child(1) {
+    border-bottom: 2px solid #ffffff;
+}
+.hamburgerMenu{
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: right;
+    margin-right:40px;
+ 
+}
+.iconMenu {
+    cursor: pointer;
+    
+}
+.leftDrawer{
+    background-color: #1f1f1f;
+    height: 92vh;
+    width: 20%;
+    float: left;
+    display: block;
+}
+.rightDrawer{
+     
+    height: 92vh;
+    width: 80%;
+    float: right;
+    display: block;
+    overflow: hidden;
+}
+section.sliders{
+    height: 100%;
+    width: 100%;
+}
+.bottomWrapper{
+    height: 8vh;
+    width: 100%;
+    text-align: right;
+    position: relative;
+}
+.bottomWrapper .iconWrapper{
+    height: 100%;
+    position: static;
+    font-size: 4em;
+    display: inline-flex;
+}
+.bottomWrapper .iconWrapper i {
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.thumber{
+    width: 350px;
+    height: 60vh;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: 152px; 
+    margin-left:-100px;
+    z-index: 9;
+}
+.thumbHider {
+    
+    width: calc(350px * 3);
+    height: 100%;    
+    overflow: hidden;
+    display: inline-block;
+    font-size: 0px;
+}
+
+.thumb{
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    padding: 0px;
+    margin: 0px;
+ 
+}
+.thumb1{
+    background-image: url(assets/thumb_lane-b-miniimalissimo-4-1600x1067.jpg);
+    
+    left:0px;
+}
+.thumb2{
+    background-image: url(assets/thumb_Cardinale_A11.jpg);
+
+}
+.thumb3{
+    background-image: url(assets/thumb_48231-main_1678-4_48231_sc_v2com.jpg);
+
+}
+
+.wider{
+    width: 80vw;
+    height: 100%;
+    display: contents;
+    position: absolute;
+    overflow: hidden;
+}
+.wideHider {
+    width: calc(80vw * 3);;
+    height: 100%;
+    overflow: hidden;
+    display: inline-block;
+    font-size:0px;
+    
+}
+
+
+.wide{
+    background-size:cover;
+    background-position: center;
+    width: 80vw;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: multiply;
+}
+
+.wide1{
+    background-image: url(assets/flatness-minimalissimo-1-cov.jpg);
+}
+.wide2{
+    background-image: url(assets/minimalissimo-architecture-jim-brunnestom-dalsland-cabin-2.0-10.jpg);
+}
+.wide3{
+    background-image: url(assets/mirage-gstaad-minimalissimo-cover.jpg);
+}
+
+.hTitler{
+    width: calc(80% - 370px);
+    height: 141px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: 151px;
+    /*left: 590px;*/
+    left:calc(20% + 300px);
+    z-index: 99;
+    line-height: 0;
+    padding: 0px;
+    margin: 0px;
+}
+.hTitleHider{
+    height: 141px;
+    background-color: transparent;
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 0px;
+}
+.hTitle{
+    color: #ffffff;
+    font-size: 120px;
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    line-height: 96px;
+    height: 141px;
+}
+.fTitle1{
+  
+}
+.fTitle2{
+    font-size: 100px;
+}
+.fTitle3{
+    font-size: 72px;
+}
+.sTitler{
+    width: calc(80% - 580px);
+    height: 80px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: 291px;
+    /*left: 590px;*/
+    left:calc(20% + 300px);
+    z-index: 99;
+    line-height: 0;
+    padding: 0px;
+    margin: 0px;
+ 
+}
+.sTitleHider{
+    height: 80px;
+    background-color: transparent;
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 0px;
+}
+.stitle{
+    color: #ffffff;
+    font-size: 24px;
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 0.2rem;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    line-height: 24px;
+    height: 80px;
+}
+.sTitle1{
+ 
+}
+.sTitle2{
+ 
+}
+.sTitle3{
+ 
+}
+.hButtoner{
+    width: 250px;    
+    top: 470px;    
+    /*left: 660px;*/
+    left:calc(20% + 300px);
+    position: absolute;     
+    height: 40px ;
+    display: block; 
+    overflow: hidden; 
+    z-index: 99;
+}
+.hButtonHider{
+    height: 40px;
+    background-color: transparent;    
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 0px;
+}
+.hButton{
+    color:#ffffff;
+    font-size: 12px;   
+    text-transform: uppercase;
+    border: 1px solid #ffffff;     
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem; 
+    z-index: 3;
+    height: 40px;
+    width: 250px;
+    position: absolute;
+    display: none;
+}
+.hButton a{
+    width: 100%; 
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    padding: 11px;
+}
+.hButton a:hover{
+    color:#222222;
+    background-color: #ffffff;
+}
+.hButton1{
+    display:block;
+}
+.hButton2{
+
+}
+.hButton3{
+
+}
+.hCounter{
+    width: 180px;
+    height: 101px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top:580px;
+    margin-left:202px;
+    z-index: 99;
+}
+
+.hCountHider {
+    color:#ffffff;    
+    position: absolute;
+    font-family: 'Bungee Outline', cursive;
+    line-height: 101px;
+    width: calc(180px * 3);;
+    height: 101px;
+    overflow: hidden;
+    display: inline-block;
+    font-size:0px;
+}
+
+
+.hCount{
+    font-size: 8rem;
+    width: 180px;
+    height: 101px;
+    top:0px;
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+    padding: 0px;
+    margin: 0px;
+}
+
+.hCount1{
+    left:0px;
+}
+.visualBug1{
+    width:100px;
+    flex-grow: 1;
+}
+
+.filterMenu ul li:hover{
+    border-bottom: 2px solid #ffffff;
+    margin-top: -1px;
+}
+/*
+
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Noto Sans HK', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Ramabhadra', sans-serif;
+
+    font-family: 'Londrina Outline', cursive;
+
+    font-family: 'Bungee Outline', cursive;
+
+*/
+@media screen and (max-width: 1800px) {
+    .sTitler{
+        width: calc(80% - 530px);
+    }
+}
+@media screen and (max-width: 1600px) {
+    .sTitler{
+        width: calc(80% - 400px);
+        height: 100px;
+    }
+    .sTitleHider{
+        height: 100px;
+    }
+    .stitle {
+        font-size: 20px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .sTitler{
+        width: calc(80% - 370px);
+        
+    }
+    .stitle {
+        font-size: 20px;
+        
+    }
+    .filterMenu ul{
+        width:80%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .sTitler{
+        width: calc(80% - 370px);
+        height: 100px;
+    }
+    .sTitleHider{
+        height: 100px;
+    }
+    .stitle {
+        font-size: 20px;
+        height: 100px;
+    }
+    .fTitle3 {
+        font-size: 50px;
+    }
+    .filterMenu ul{
+        width:80%;
+    }
+    .fTitle1{
+        font-size: 90px;
+        line-height: 54px;
+    }
+    .fTitle2{
+        font-size: 80px;
+        line-height: 54px;
+    }
+    .fTitle3{
+        font-size: 60px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .filterMenu ul{
+        width:100%;
+    }
+    .fTitle1{
+        font-size: 54px;
+        line-height: 54px;
+    }
+    .fTitle2{
+        font-size: 42px;
+        line-height: 54px;
+    }
+    .fTitle3{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .sTitle1 {
+        font-size: 12px;
+        height: 100px;    
+    }
+    .stitle{
+        letter-spacing: unset;
+        font-size: 14px;
+        height: 120px;
+    }
+    .sTitleHider {
+        height: 120px;    
+    }
+    .sTitler{
+        height: 120px;    
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .leftDrawer{
+        width: 0%;
+    }
+    .wider {
+        width: 100vw;
+    }
+    .wideHider {
+        width: calc(100vw * 3);
+    }
+    .wide{
+        width: 100vw;
+    }
+    .rightDrawer{
+        width: 100%;
+    }
+    .filterMenu ul{
+        width: 100%;
+    }
+    .thumber{
+        margin-left: 20px;
+    }
+    .hTitle{
+        font-size: 66px;
+    }
+    .hTitler{
+        left: 270px;
+        width: 240px;
+    }
+    .fTitle1{
+        font-size: 48px;
+        line-height: 35px;
+    }
+    .fTitle2{
+        font-size: 42px;
+        line-height: 35px;
+    }
+    .fTitle3{
+        font-size: 36px;
+        line-height: 35px;
+    }
+    .stitle{
+        font-size: 0.8rem;
+        letter-spacing: 0.5rem;
+    }
+    
+    .hTitleHider {
+    }
+    
+    .hTitleBorder {
+       width:340px;
+       top:216px;
+       height:76px;
+       left:416px;
+    }
+
+    .sTitleBorder{
+       width: 340px;
+       left:416px;
+    }   
+    .hButton {
+        left:416px;
+    }
+    .hCount{
+        top: 680px;
+    }
+
+    .filterMenu{
+        width: 0px;
+        flex-grow: 0;
+        display: none;
+        visibility: hidden;
+    }
+    .thumb{
+        width: 230px;
+    }
+    .thumbHider {
+        width: calc(230px * 3);
+    }
+    .thumber {
+        width: 230px;
+    }
+
+    .sTitle1 {
+        font-size: 12px;
+        height: 100px;    
+    }
+    .stitle{
+        letter-spacing: unset;
+        font-size: 14px;
+        height: 120px;
+    }
+    .sTitleHider {
+        height: 120px;    
+    }
+    .sTitler{
+        height: 120px;    
+        left: 270px;
+        width: 240px;
+    }
+    .hButtoner{
+        left: 270px;
+    }
+    .hButton {
+        left: 0px;    
+    }
+    .hCounter{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+ 
+@media screen and (max-width: 576px) {
+    .topWrapper {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .filterMenu{
+        width: 0px;
+        flex-grow: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+    .hamburgerMenu {
+        margin-right: 10px;
+    }
+    .thumb{
+        top: 160px;
+        width: 150px;
+        left: 130px;
+    }
+    .hTitle{
+        font-size: 2rem;
+        top: -8px;
+    }
+    .hTitleBorder{
+        top: 156px;
+        left: 190px;
+        width: 166px;
+    }
+    .sTitleBorder{
+        top: 200px;
+        width: 166px;
+        left: 190px;
+    }
+    .hButton{
+        left:190px;
+        font-size: 0.6rem;
+        width: 150px;
+        top: 360px;
+    }
+    .hCount {
+        font-size: 4rem;
+        top: 460px;
+        margin-left: 83px;
+        line-height: 4rem;
+    }
+    .visualBug1 {
+        width: 50px;
+    }
+    .hCounter{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .thumber{
+        display: none;
+        visibility: hidden;
+    }
+    .hTitler{
+        left: 20px;
+        width: 300px;
+        height: 130px;
+    }
+    .sTitler{
+        left: 20px;
+    }
+    .hCounter{
+        display: none;
+        visibility: hidden;
+    }
+    .hButtonHider{
+        
+    }
+    .hButtoner {
+        left: 20px;    
+    }
+    .hButton{
+        left: 0px;
+        top: 0px;
+        width:100%;
+    }
+    #solaGit{
+        font-size: 0.7em;
+        letter-spacing: 0px;
+        width: 60px;
+    }
+    #sagaGit{
+        font-size: 0.7em;
+        letter-spacing: 0px;
+        width: 60px;
+    }
+    .stitle{
+        width: 300px;
+    }
+}
